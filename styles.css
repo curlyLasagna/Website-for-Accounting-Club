@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 7vh;
+    max-height: 8vh;
+    background-color: black;
+    font-family: calibri, sans-serif;
+    
+}
+
+.logo{
+    max-block-size: 4vh;
+}
+
+.navlinks{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.navlinks li{
+    list-style: none;
+}
+
+.navlinks a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+h1{
+    text-align: center;
+    font-family: Calibri, sans-serif;
+    padding-top: 3vh;
+}
