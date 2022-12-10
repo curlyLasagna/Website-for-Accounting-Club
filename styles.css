@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: none;
 }
 
 nav{
@@ -38,5 +38,17 @@ nav{
 h1{
     text-align: center;
     font-family: Calibri, sans-serif;
+    color: white;
+}
+h2{
+    text-align: center;
+    font-family: Calibri, sans-serif;
     padding-top: 3vh;
+}
+.clubname{
+    background-image: url(images/gulfparkgateway.jpg);
+    padding-top: 20px;
+    padding-bottom: 540px
+
+    ;
 }

@@ -1,6 +1,5 @@
 # Initial website Plan
-
-# 4 main pages
+    # 3 main pages
 
 # Home page
     #News
