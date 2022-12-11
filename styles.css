@@ -8,8 +8,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    min-height: 7vh;
-    max-height: 8vh;
+    width: fill;
+    height: 7vh;
     background-color: black;
     font-family: calibri, sans-serif;
     
