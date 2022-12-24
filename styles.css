@@ -3,52 +3,133 @@
     padding: 0px;
     box-sizing: none;
 }
+body {
+    font-family: proxima nova, sans-serif;
+    background: gray;
+}
 
 nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: fill;
-    height: 7vh;
-    background-color: black;
-    font-family: calibri, sans-serif;
-    
+    position: relative;
+    margin: 0px auto 8px;
+    width: page;
+    height: 70px;
+    background: black;
+    border-radius: 0px;
+    font-size: 0;
+    box-shadow: 0 8px 0px 0 rgba(255, 208, 70, 1);
 }
 
-.logo{
-    max-block-size: 4vh;
-}
-
-.navlinks{
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-}
-
-.navlinks li{
-    list-style: none;
-}
-
-.navlinks a{
+nav a {
+    font-size: 15px;
+    text-transform: uppercase;
     color: white;
     text-decoration: none;
+    line-height: 65px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
     letter-spacing: 2px;
+}
+
+a:nth-child(1) {
+    width: 100px;
+}
+
+a:nth-child(2) {
+    width: 100px;
+}
+
+a:nth-child(3) {
+    width: 265px;
+}
+
+.logo {
+    max-block-size: 4vh;
+    top: 16px;
+    padding-left: 6px;
+    position: fixed;
 }
 
 h1{
     text-align: center;
-    font-family: Calibri, sans-serif;
     color: white;
 }
 h2{
     text-align: center;
-    font-family: Calibri, sans-serif;
     padding-top: 3vh;
 }
+
+h3{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+main li {
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+main li p {
+    text-decoration: none;
+    list-style: none;
+    padding-left: 10px;
+}
+
 .clubname{
     background-image: url(images/gulfparkgateway.jpg);
-    padding-top: 20px;
-    padding-bottom: 540px
-
-    ;
+    padding-top: 10px;
+    padding-bottom: 540px;
 }
+
+/* Page Animations */
+.transition-fade {
+    opacity: 1;
+    transition: 700ms;
+    transform: translateX(0%);
+    transform-origin: left;    
+}
+
+html.is-animating .transition-fade {
+    opacity: 1;
+    transform: translateX(-100%);
+}
+
+html.is-leaving .transition-fade {
+    opacity: 1;
+    transform-origin: right;
+    transform: translateX(100%);
+}
+/*nav animations*/
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: #ffd046;
+    width: 458px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    transition: all 1s ease 0s;
+}
+
+nav .start-home,a:nth-child(1):hover~.animation {
+    width: 96px;
+    left: 0px;
+}
+
+nav .start-home, a:nth-child(2):hover~.animation {
+    width: 112px;
+    left: 92px;
+}
+
+nav .start-home, a:nth-child(3):hover~.animation {
+    width: 236px;
+    left: 214px;
+}
+
+
+
+
