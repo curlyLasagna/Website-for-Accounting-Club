@@ -1,14 +1,11 @@
-# Initial website Plan
-    # 3 main pages
+# Accounting Club Website
+Static page  
+Created using [Jekyll](https://jekyllrb.com/)  
 
-# Home page
-- News
-- About us 
-- Application
+## Ruby version
+3.1.3
 
-# About us page
-- History 
-- Current officers
-    
-# Application page
-[Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfvMau5aQCtV88nNWFmQeFR1wL9DmNIMP3aignhCKNQzzYixA/viewform?usp=sf_link)
+## Development
+```
+gem install jekyll bundler
+```
