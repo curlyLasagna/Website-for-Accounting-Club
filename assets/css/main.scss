@@ -7,6 +7,62 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+//Navigation Bar Styles
+
+.masthead { 
+  background-color: black;
+  border-color: black;
+}
+
+.masthead__inner-wrap {
+  font-family: 'adelle', sans-serif;
+}
+
+.greedy-nav {
+  letter-spacing: 2px;
+  background-color: black;
+}
+.greedy-nav a {
+  color: white;
+
+  &:hover {
+    color: #FFD044;
+  }
+
+}
+
 .greedy-nav .visible-links a:before {
   background-color: #FFD044;
+}
+
+a.site-title {
+  color: #FFD044;
+}
+//End of Navigation Styles
+
+
+//bodysyles
+body {
+  font-family: 'adelle', sans-serif;
+  background-color: #FFD044;
+}
+
+//Homestyles
+.page__hero--overlay .page__title {
+  font-weight: 540;
+}
+
+//Home form styles
+fieldset {
+  background-color:#FFD044;
+}
+
+.form-background {
+  background-color: #FFD044;
+}
+//Home form styles end
+
+//footer styles
+.page__footer {
+  background-color: black;
 }
