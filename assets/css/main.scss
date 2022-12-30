@@ -18,6 +18,8 @@
 
 .masthead__inner-wrap {
   font-family: 'adelle', sans-serif;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .greedy-nav {
@@ -40,6 +42,10 @@
 a.site-title {
   color: #FFD044;
 }
+
+.page__lead {
+  text-align: center;
+}
 //End of Navigation Styles
 
 
@@ -47,22 +53,93 @@ a.site-title {
 body {
   font-family: 'adelle', sans-serif;
   background-color: #FFD044;
+  padding: 0;
+  margin: 0;
+}
+#main {
+  padding: 0;
 }
 
 //Homestyles
+.page__hero--overlay {
+  margin-bottom: 0px;
+  width: 100%;
+  height: 90vh;
+}
 .page__hero--overlay .page__title {
   font-weight: 540;
+  text-align: center;
 }
 
 //Home form styles
 fieldset {
-  background-color:#FFD044;
+  background-color: #fff1c7;
+}
+
+.form_title { 
+  text-align: center;
+}
+
+label {
+  pointer-events: none;
 }
 
 .form-background {
-  background-color: #FFD044;
+  background-color: #fff1c7;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  box-shadow: 4px 4px;
+}
+
+#form_submit {
+  border-radius: 8px;
 }
 //Home form styles end
+
+//Body Styles
+h1 {
+  text-align: center;
+}
+
+//Post Styles
+#h1_News {
+  background-color: #FFD044;
+  padding-top: 18px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 2px;
+  border-color: #FFD044;
+  position: sticky;
+  top: 62px;
+}
+.archive {
+  margin-top: 0px;
+}
+.archive__subtitle {
+  text-align: center;
+  border: 0px;
+}
+
+.list__item {
+  margin: 20px;
+  padding: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #fff1c7;
+  border: 5px;
+  border-radius: 10px;
+  border-bottom-right-radius: 0px;
+  box-shadow: 4px 4px;
+}
+
+//post page styles
+.page {
+  margin: 10px;
+}
 
 //footer styles
 .page__footer {
