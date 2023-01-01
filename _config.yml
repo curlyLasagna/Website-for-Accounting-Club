@@ -29,10 +29,24 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "dirt"
+minimal_mistakes_skin: "air"
 atom_feed:
   hide: true
 
+# head_scripts:
+#   - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js
+
+# facebook:
+#   username: "archBtw"
+
+footer:
+  links:
+    - label: "Facebook"
+    - icon: "fab fa-fw fa-facebook"
+    - url: "https://mmistakes.github.io/minimal-mistakes/docs/configuration/#seo-social-sharing-and-analytics-settings"
+    - label: "Instagram"
+    - icon: "fab fa-fw fa-facebook"
+    - url: "https://www.instagram.com/usmstudentlife/"
 # plugins:
 
 # Exclude from processing.
