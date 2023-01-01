@@ -2,128 +2,124 @@
 title: Club Application
 layout: single
 entryIDs:
-  - entry.2005620554
-  - entry.1045781291
-  - entry.1065046570
-  - entry.1166974658
-  - entry.839337160
-  - entry.946230911
-  - entry.405252614
+- entry.2005620554
+- entry.1045781291
+- entry.1065046570
+- entry.1166974658
+- entry.839337160
+- entry.946230911
+- entry.405252614
+- entry.405252614
 googleForm: https://docs.google.com/forms/d/e/1FAIpQLSeWN0VHyPE0Bc7ksmdccr_A9RDruqJKpGTukDmlIJ4hXS4ySg/formResponse
 ---
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- https://stackoverflow.com/questions/31660273/markdown-jekyll-insert-an-iframe-that-fills-the-container -->
-  <style>
-   .embed-form {
-     position: relative;
-     padding-bottom: 56.25%;
-     padding-top: 35px;
-     height: 100%;
-     overflow: hidden;
-   }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- https://stackoverflow.com/questions/31660273/markdown-jekyll-insert-an-iframe-that-fills-the-container -->
+    <style>
+        .embed-form {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 35px;
+            height: 100%;
+            overflow: hidden;
+        }
 
-   .embed-form iframe {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100vh;
-   }
+        .embed-form iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+        }
 
-   .form-group {
-     display: flex;
-     flex-flow: column wrap;
-     align-content: center;
-     border-radius: 10px;
-     border: 5px;
-   }
-   select {
-     // A reset of styles, including removing the default dropdown arrow
-     appearance: none;
-     // Additional resets for further consistency
-     background-color: transparent;
-     border: none;
-     padding: 0 1em 0 0;
-     margin: 0;
-     width: 100%;
-     font-family: inherit;
-     font-size: inherit;
-     cursor: inherit;
-     line-height: inherit;
-     position: relative;
-     top: -1px;
-     left: -1px;
-     right: -1px;
-     bottom: -1px;
-     border: 2px solid var(--select-focus);
-     border-radius: inherit;
-     align-items: center;
-   }
-  </style>
+        .form-group {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            border-radius: 10px;
+            border: 5px;
+        }
+
+        select {
+            // A reset of styles, including removing the default dropdown arrow
+            appearance: none;
+            // Additional resets for further consistency
+            background-color: transparent;
+            border: none;
+            padding: 0 1em 0 0;
+            margin: 0;
+            width: 100%;
+            font-family: inherit;
+            font-size: inherit;
+            cursor: inherit;
+            line-height: inherit;
+            position: relative;
+            top: -1px;
+            left: -1px;
+            right: -1px;
+            bottom: -1px;
+            border: 2px solid var(--select-focus);
+            border-radius: inherit;
+            align-items: center;
+        }
+    </style>
 </head>
+
 <body>
 
-  <div class="form-group">
-    <form action=" {{  page.googleForm }}">
-    <label for="">Name</label>
-    <input name="{{ page.entryIDs[0] }}" type="text" value=""/>
-    <label for="">Email</label>
-    <input name="{{ page.entryIDs[1] }}" type="text" value=""/>
-    <label for="">What do you hope to accomplish from the accounting society?</label>
-    <select id="" name="{{ page.entryIDs[2] }}">
-      <option value=""
-              hidden
-      ></option>
-      <option value="Exposure to employers">Exposure to employers</option>
-      <option value="Networking">Networking</option>
-      <option value="Assistance with accouting courses">Assistance with accouting courses</option>
-      <option value="Volunteer in community events">Volunteer in community events</option>
-      <option value="Other">Other</option>
-    </select>
-    <label for="">Current major?</label>
-    <select id="" name="{{ page.entryIDs[3] }}">
-      <option value=""
-              hidden
-      ></option>
-      <option value="Accounting">Accounting</option>
-      <option value="Finance">Finance</option>
-      <option value="Business">Business</option>
-      <option value="Other">Other</option>
-    </select>
-    <label for="">Industry of interest</label>
-    <select id="" name="{{ page.entryIDs[4] }}">
-      <option value=""
-              hidden
-      ></option>
-      <option value="Big 4 public accounting">Big 4 public accounting</option>
-      <option value="Small/medium sized public accounting">Small/medium sized public accounting</option>
-      <option value="Industry">Industry</option>
-      <option value="Tax">Tax</option>
-      <option value="Other">Other</option>
-    </select>
-    <label for="">Preferred location to work</label>
-    <select id="" name="{{ page.entryIDs[5] }}">
-      <option value=""
-              hidden
-      ></option>
-        <option value="Gulf Coast">Gulf Coast</option>
-        <option value="Mississippi">Mississippi</option>
-        <option value="Alabama">Alabama</option>
-        <option value="Louisianna">Louisianna</option>
-        <option value="Other">Other</option>
-    </select>
-    <button type="submit">Submit</button>
-    </form>
-  </div>
+    <div class="form-group">
+        <form action=" {{  page.googleForm }}">
+            <label for="">Name</label>
+            <input name="{{ page.entryIDs[0] }}" type="text" value="" />
+            <label for="">Email</label>
+            <input name="{{ page.entryIDs[1] }}" type="text" value="" />
+            <label for="">What do you hope to accomplish from the accounting society?</label>
+            <select id="" name="{{ page.entryIDs[2] }}">
+                <option value="" hidden></option>
+                <option value="Exposure to employers">Exposure to employers</option>
+                <option value="Networking">Networking</option>
+                <option value="Assistance with accouting courses">Assistance with accouting courses</option>
+                <option value="Volunteer in community events">Volunteer in community events</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="">Current major?</label>
+            <select id="" name="{{ page.entryIDs[3] }}">
+                <option value="" hidden></option>
+                <option value="Accounting">Accounting</option>
+                <option value="Finance">Finance</option>
+                <option value="Business">Business</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="">Industry of interest</label>
+            <select id="" name="{{ page.entryIDs[4] }}">
+                <option value="" hidden></option>
+                <option value="Big 4 public accounting">Big 4 public accounting</option>
+                <option value="Small/medium sized public accounting">Small/medium sized public accounting</option>
+                <option value="Industry">Industry</option>
+                <option value="Tax">Tax</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="">Preferred location to work</label>
+            <select id="" name="{{ page.entryIDs[5] }}">
+                <option value="" hidden></option>
+                <option value="Gulf Coast">Gulf Coast</option>
+                <option value="Mississippi">Mississippi</option>
+                <option value="Alabama">Alabama</option>
+                <option value="Louisianna">Louisianna</option>
+                <option value="Other">Other</option>
+                </select>
+                <input name={{ page.entryIDs[6] }} type="checkbox" value="Yes" /><label for="">Share information with employers?</label>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 
-  <!-- <div class="embed-form">
+    <!-- <div class="embed-form">
        <iframe
        src="https://docs.google.com/forms/d/e/1FAIpQLSfvMau5aQCtV88nNWFmQeFR1wL9DmNIMP3aignhCKNQzzYixA/viewform?embedded=true"
        >Loading…</iframe>
