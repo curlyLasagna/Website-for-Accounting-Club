@@ -22,14 +22,14 @@ title: Gulf Park Accounting Society
 email: your-email@example.com
 # description: >- # this means to ignore newlines until "baseurl:"
 # University of Southern Mississippi Accounting Club Website
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "/" # the subpath of your site, e.g. /blog
+# url: "https://curlylasagna.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
 # Build settings
-# theme: minimal-mistakes-jekyll
-remote_theme: mmistakes/minimal-mistakes
+theme: minimal-mistakes-jekyll
+# remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "air"
 atom_feed:
   hide: true
