@@ -50,6 +50,9 @@ footer:
     - url: "https://www.instagram.com/usmstudentlife/"
 plugins: [jekyll-include-cache]
 
+head_scripts:
+  - https://cdn.tailwindcss.com
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
