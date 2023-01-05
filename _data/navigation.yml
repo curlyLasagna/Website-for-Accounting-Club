@@ -1,5 +1,5 @@
 main:
   - title: "Join Us"
-    url: /apply.html
+    url: apply.html
   - title: "About"
-    url: /about.html
+    url: about.html

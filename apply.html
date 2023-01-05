@@ -2,14 +2,14 @@
 title: Club Application
 layout: single
 entryIDs:
-- entry.2005620554
-- entry.1045781291
-- entry.1065046570
-- entry.1166974658
-- entry.839337160
-- entry.946230911
-- entry.405252614
-- entry.405252614
+    - entry.2005620554
+    - entry.1045781291
+    - entry.1065046570
+    - entry.1166974658
+    - entry.839337160
+    - entry.946230911
+    - entry.405252614
+    - entry.405252614
 googleForm: https://docs.google.com/forms/d/e/1FAIpQLSeWN0VHyPE0Bc7ksmdccr_A9RDruqJKpGTukDmlIJ4hXS4ySg/formResponse
 ---
 <!DOCTYPE html>
@@ -39,17 +39,11 @@ googleForm: https://docs.google.com/forms/d/e/1FAIpQLSeWN0VHyPE0Bc7ksmdccr_A9RDr
         }
 
         .form-group {
-            display: flex;
-            flex-flow: column wrap;
-            align-content: center;
-            border-radius: 10px;
-            border: 5px;
+            padding-top: 10px;
         }
 
         select {
-            // A reset of styles, including removing the default dropdown arrow
             appearance: none;
-            // Additional resets for further consistency
             background-color: transparent;
             border: none;
             padding: 0 1em 0 0;
@@ -74,7 +68,7 @@ googleForm: https://docs.google.com/forms/d/e/1FAIpQLSeWN0VHyPE0Bc7ksmdccr_A9RDr
 <body>
 
     <div class="form-group">
-        <form action=" {{  page.googleForm }}">
+        <form class="form-background" action=" {{  page.googleForm }}">
             <label for="">Name</label>
             <input name="{{ page.entryIDs[0] }}" type="text" value="" />
             <label for="">Email</label>
@@ -115,7 +109,7 @@ googleForm: https://docs.google.com/forms/d/e/1FAIpQLSeWN0VHyPE0Bc7ksmdccr_A9RDr
                 <option value="Other">Other</option>
                 </select>
                 <input name={{ page.entryIDs[6] }} type="checkbox" value="Yes"/> Share your information with employers?
-                <input type="" name="" value="Submit" />
+                <input type="" class="btn btn--small" name="" value="Submit" />
         </form>
     </div>
 
